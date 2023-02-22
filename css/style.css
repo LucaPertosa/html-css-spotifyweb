@@ -4,3 +4,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* UTILITY */
+.flex {
+    display: flex;
+}
+/* WRAPPER */
+#wrapper {
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* debug */
+    background-color: grey;
+}
+/* Sidenav */
+.sidenav {
+    width: 250px;
+    height: 100%;
+    /* debug */
+    background-color: lightgray;
+}
+/* /Sidenav */
+/* Content */
+.content {
+    width: calc(100% - 250px);
+    /* debug */
+    border: 3px solid black;
+}
+
+.content header {
+    height: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 250px;
+    /* debug */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main {
+    height: 100%;
+    padding-top: 50px;
+    overflow-y: scroll;
+    background-color: red;
+}
+
+/* /Content */
+
+/* /WRAPPER */
+
+/* PLAYER */
+#player {
+    width: 100%;
+    height: 100px;
+    /* debug */
+    background-color: black;
+}
+/* /PLAYER */
