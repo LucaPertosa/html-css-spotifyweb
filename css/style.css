@@ -14,6 +14,15 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.xs-ver {
+    display: none;
+}
+
 /* UTILITY */
 .flex {
     display: flex;
@@ -37,31 +46,86 @@ a {
     position: relative;
     color: white;
     /* debug */
-    background-color: lightgray;
+    background-color: black;
 }
-
+/* Logo */
 .logo {
+    width: 100%;
     padding: 10px 0;
 }
-.logo img{
+
+.logo .norm-ver{
     max-width: 70%;
 }
+
+.logo .xs-ver {
+    max-width: 100%;
+}
+/* /Logo */
+/* Navigation btn */
+
+.navigate li {
+    margin: 10px 0;
+}
+.navigate a {
+    align-items: center;
+}
+
+.navigate a img {
+    display: inline-block;
+    width: 30px;
+}
+
+.navigate h4 {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* /Navigation btn */
+
+/* Playlist */
+.playlist {
+    padding: 10px 0;
+    line-height: 2rem;
+}
+
+.playlist h3 {
+    margin: 10px 0;
+}
+
+.add-playlist {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.add-playlist h4{
+    font-size: 1rem;
+}
+/* /Playlist */
+
 
 .nav-foot {
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 10px 0;
 }
 .download-app {
     width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid black;
+    padding: 10px;
+    border-bottom: 2px solid lightgray;
+    font-weight: 100;
+}
+
+.download-app a img {
+    display: inline-block;
+    width: 30px;
 }
 
 .user {
     padding-top: 10px;
+    padding-left: 10px;
     width: 100%;
 }
 
@@ -69,21 +133,20 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid lightblue;
+    border: 2px solid lightgrey;
 }
 
 .user h3 {
     font-size: 1.5rem;
     margin-left: 10px;
 }
-
 /* /Sidenav */
 /* Content */
 .content {
     width: calc(100% - 250px);
     position: relative;
     /* debug */
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 .content header {

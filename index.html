@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,40 +20,67 @@
         <!-- Navigation -->
         <nav class="sidenav">
             <section class="logo">
-                <img src="img/logo.svg" alt="">
+                <!-- LOGO (desktop version) -->
+                <img class="norm-ver" src="img/logo.svg" alt="">
+                <!-- /LOGO (desktop version) -->
+                
+                <!-- LOGO (small desktop version) -->
+                <img class="xs-ver" src="img/logo-small.svg" alt="">
+                <!-- /LOGO (small desktop version) -->
             </section>
+
             <section class="navigate">
+                <!-- Navigation btn -->
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a class="flex" href="">
+                            <img src="img/home.svg" alt="">
+                            <h4 class="norm-ver">Home</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Cerca</a>
+                        <a class="flex" href="">
+                            <img src="img/search.svg" alt="">    
+                            <h4 class="norm-ver">Cerca</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="">La tua libreria</a>
+                        <a class="flex" href="">
+                            <img src="img/libreria.svg" alt="">
+                            <h4 class="norm-ver">La tua libreria</h4>
+                        </a>
                     </li>
                 </ul>
-                <ul class="playlist">
+                <!-- /Navigation btn -->
+                <!-- Playlist -->
+                <ul class="playlist norm-ver">
                     <li>
                         <h3>PLAYLIST</h3>
                     </li>
                     <li class="add-playlist">
-                        <a href="">Crea Playlist</a>
+                        <a class="flex" href="">
+                            <i class="fa-solid fa-square-plus fa-2x"></i>
+                            <h4>Crea playlist</h4>
+                        </a>
                     </li>
                     <li>Nuova playlist</li>
                     <li>Nuova playlist</li>
                     <li>Nuova playlist</li>
                 </ul>
+                <!-- /Playlist -->
             </section>
+
             <section class="nav-foot">
                 <div class="download-app">
-                    <a href="">Installa App</a>
+                    <a class="flex align-ct" href="">
+                        <img src="img/download.svg" alt="">
+                        <h4 class="norm-ver">Installa app</h4>
+                    </a>
                 </div>
-                <div class="user flex align-ct">
+                <a href="" class="user flex align-ct">
                     <img class="round" src="img/profile.svg" alt="">
-                    <h3>John Doe</h3>
-                </div>
+                    <h3 class="norm-ver">John Doe</h3>
+                </a>
             </section>
         </nav>
         <!-- /Navigation -->

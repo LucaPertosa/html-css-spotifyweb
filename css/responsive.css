@@ -15,14 +15,34 @@
     /* Sidenav */
     .sidenav {
         width: 50px;
+        margin: 0 auto;
     }
+    .sidenav .round {
+        width: 30px;
+        height: 30px;
+    }
+    .download-app {
+        margin: 0 auto;
+        text-align: center;
+        border: 0;
+    }
+    /* /Sidenav */
     .content {
         width: calc(100% - 50px);
     }
     .content header {
         left: 50px;
     }
-    /* /Sidenav */
+    .xs-ver {
+        display: contents;
+    }
+    img.xs-ver {
+        display: block;
+    }
+    .norm-ver {
+        display: none;
+    }
+    
 
 }
 /* /RESPONSIVE EXTRASMALL-SCREEN */
