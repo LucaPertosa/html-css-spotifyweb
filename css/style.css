@@ -23,6 +23,9 @@ ul {
     display: none;
 }
 
+.selected-nav {
+    box-shadow: -10px 0px 0px 0px green;
+}
 /* UTILITY */
 .flex {
     display: flex;
@@ -44,7 +47,7 @@ ul {
     height: 100%;
     padding: 0 10px;
     position: relative;
-    color: white;
+    color: lightgray;
     /* debug */
     background-color: black;
 }

@@ -26,7 +26,6 @@
         text-align: center;
         border: 0;
     }
-    /* /Sidenav */
     .content {
         width: calc(100% - 50px);
     }
@@ -42,6 +41,7 @@
     .norm-ver {
         display: none;
     }
+    /* /Sidenav */
     
 
 }
