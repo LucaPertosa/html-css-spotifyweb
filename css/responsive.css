@@ -12,6 +12,17 @@
 
 /* RESPONSIVE EXTRASMALL-SCREEN */
 @media screen and (max-width:600px) {
-    
+    /* Sidenav */
+    .sidenav {
+        width: 50px;
+    }
+    .content {
+        width: calc(100% - 50px);
+    }
+    .content header {
+        left: 50px;
+    }
+    /* /Sidenav */
+
 }
 /* /RESPONSIVE EXTRASMALL-SCREEN */
