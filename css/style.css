@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --main-content-background: #141922;
+}
 /* Layout */
 body {
     font-family: 'Montserrat', sans-serif;;
@@ -151,22 +155,31 @@ ul {
     /* debug */
     /* border: 3px solid black; */
 }
-
+/* Content-Header */
 .content header {
-    height: 50px;
+    padding: 15px;
+    text-align: right;
     position: fixed;
     right: 0;
     top: 0;
+    z-index: 999;
     left: 250px;
-    /* debug */
     background-color: rgba(0, 0, 0, 0.4);
 }
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color: white;
+}
+/* /Content-Header */
 
 main {
     height: 100%;
     padding-top: 50px;
     overflow-y: scroll;
-    background-color: red;
+    background-color: var(--main-content-background);
 }
 
 /* /Content */
