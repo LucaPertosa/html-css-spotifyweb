@@ -8,6 +8,7 @@
 /* Variables */
 :root {
     --main-content-background: #141922;
+    --main-header-height: 75px;
 }
 /* Layout */
 body {
@@ -28,7 +29,11 @@ ul {
 }
 
 .selected-nav {
-    box-shadow: -10px 0px 0px 0px green;
+    border-left: 2px solid green;
+}
+
+.selected-main {
+    border-bottom: 2px solid green;
 }
 /* UTILITY */
 .flex {
@@ -45,11 +50,10 @@ ul {
     background-color: grey;
 }
 
-/* Sidenav */
+/* SIDENAV */
 .sidenav {
     width: 250px;
     height: 100%;
-    padding: 0 10px;
     position: relative;
     color: lightgray;
     /* debug */
@@ -58,7 +62,8 @@ ul {
 /* Logo */
 .logo {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
+    
 }
 
 .logo .norm-ver{
@@ -73,6 +78,7 @@ ul {
 
 .navigate li {
     margin: 10px 0;
+    padding: 0 10px;
 }
 .navigate a {
     align-items: center;
@@ -85,7 +91,7 @@ ul {
 
 .navigate h4 {
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
 }
 /* /Navigation btn */
@@ -102,11 +108,10 @@ ul {
 
 .add-playlist {
     padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
 }
 
 .add-playlist h4{
-    font-size: 1rem;
+    font-size: .9rem;
 }
 /* /Playlist */
 
@@ -119,10 +124,14 @@ ul {
     padding: 10px 0;
 }
 .download-app {
-    width: 100%;
+    width: calc(100% - 20px);
+    margin: 0 auto;
     padding: 10px;
-    border-bottom: 2px solid lightgray;
-    font-weight: 100;
+    border-bottom: 1px solid rgb(103, 97, 97);
+}
+.download-app h4{
+    font-weight: 300;
+    margin-left: 5px;
 }
 
 .download-app a img {
@@ -140,14 +149,14 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid lightgrey;
+    border: 1px solid lightgrey;
 }
 
 .user h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 10px;
 }
-/* /Sidenav */
+/* /SIDENAV */
 /* Content */
 .content {
     width: calc(100% - 250px);
@@ -158,6 +167,7 @@ ul {
 /* Content-Header */
 .content header {
     padding: 15px;
+    height: var(--main-header-height);
     text-align: right;
     position: fixed;
     right: 0;
@@ -168,8 +178,8 @@ ul {
 }
 .button {
     display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    padding: 10px 30px;
+    border-radius: 30px;
     border: 2px solid white;
     color: white;
 }
