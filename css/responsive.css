@@ -7,6 +7,11 @@
         margin: 0 auto;
     }
     /* /main-nav */
+    /* Album-section */
+    .card {
+        width: calc(100% / 4 - 15px);
+    }
+    /* /Album-section */
     /* /CONTENT */
 }
 /* /RESPONSIVE MEDIUM-SCREEN */
@@ -20,6 +25,11 @@
         margin: 0 auto;
     }
     /* /main-nav */
+    /* Album-section */
+    .card {
+        width: calc(100% / 2 - 15px);
+    }
+    /* /Album-section */
     /* /CONTENT */
 }
 /* /RESPONSIVE SMALL-SCREEN */

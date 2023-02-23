@@ -9,6 +9,7 @@
 :root {
     --main-content-background: #141922;
     --main-header-height: 75px;
+    --text-grey-color: rgb(103, 97, 97);
 }
 /* Layout */
 body {
@@ -190,6 +191,7 @@ main {
     padding-top: var(--main-header-height);
     overflow-y: scroll;
     background-color: var(--main-content-background);
+    color: white;
 }
 
 /* main-nav */
@@ -202,7 +204,8 @@ main {
 }
 .main-nav li {
     text-transform: uppercase;
-    color: white;
+    color: var(--text-grey-color);
+    font-weight: 600;
     position: relative;
     min-width: fit-content;
     margin: 15px;
@@ -214,10 +217,61 @@ main {
     bottom: -3px;
     left: 50%;
     width: 50%;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid lightgreen;
     transform: translate(-50%, 50%);
 }
 /* /main-nav */
+
+/* Album-section */
+.album-sec {
+    margin: 20px 0;
+}
+
+.album {
+    padding: 0 20px;
+}
+
+.raw {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 6 - 15px);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.circ {
+    border-radius: 50%;
+}
+
+.album-img {
+    padding: 20px 0;
+}
+
+.album-img img {
+    width: 100%;
+    display: inline-block;
+}
+
+.album-title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.album-subt {
+    font-weight: 100;
+    color: var(--text-grey-color);
+    text-transform: capitalize;
+}
+
+.subt {
+    font-weight: 100;
+    color: var(--text-grey-color);
+    margin: 10px 0;
+}
+/* /Album-section */
 
 /* /CONTENT */
 /* /WRAPPER */
