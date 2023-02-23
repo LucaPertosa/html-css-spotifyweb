@@ -32,9 +32,6 @@ ul {
     border-left: 2px solid green;
 }
 
-.selected-main {
-    border-bottom: 2px solid green;
-}
 /* UTILITY */
 .flex {
     display: flex;
@@ -115,7 +112,7 @@ ul {
 }
 /* /Playlist */
 
-
+/* Nav-footer */
 .nav-foot {
     width: 100%;
     position: absolute;
@@ -156,15 +153,17 @@ ul {
     font-size: 1.2rem;
     margin-left: 10px;
 }
+/* /Nav-footer */
 /* /SIDENAV */
-/* Content */
+
+/* CONTENT */
 .content {
     width: calc(100% - 250px);
     position: relative;
     /* debug */
     /* border: 3px solid black; */
 }
-/* Content-Header */
+/* Content-header */
 .content header {
     padding: 15px;
     height: var(--main-header-height);
@@ -183,17 +182,44 @@ ul {
     border: 2px solid white;
     color: white;
 }
-/* /Content-Header */
+/* /Content-header */
 
+/* Content-main */
 main {
     height: 100%;
-    padding-top: 50px;
+    padding-top: var(--main-header-height);
     overflow-y: scroll;
     background-color: var(--main-content-background);
 }
 
-/* /Content */
+/* main-nav */
+.main-nav ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+.main-nav li {
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    min-width: fit-content;
+    margin: 15px;
+}
 
+.main-nav .selected-main::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 50%;
+    border-bottom: 2px solid green;
+    transform: translate(-50%, 50%);
+}
+/* /main-nav */
+
+/* /CONTENT */
 /* /WRAPPER */
 
 /* PLAYER */
