@@ -75,16 +75,17 @@ ul {
 }
 /* /Logo */
 /* Navigation btn */
+.navigate li:not(.not):hover {
+    color: white;
+    cursor: pointer;
+}
 
 .navigate li {
     margin: 10px 0;
     padding: 0 10px;
 }
 
-.navigate li:not(.not):hover {
-    color: white;
-    cursor: pointer;
-}
+
 .navigate a {
     align-items: center;
 }
@@ -194,6 +195,10 @@ ul {
     border: 2px solid white;
     color: white;
 }
+
+.button:hover {
+    transform: scale(1.1);
+}
 /* /Content-header */
 
 /* Content-main */
@@ -222,6 +227,10 @@ main {
     margin: 15px;
 }
 
+.main-nav li:hover {
+    color: white;
+    cursor: pointer;
+}
 .main-nav .selected-main::after {
     content: '';
     position: absolute;
@@ -252,12 +261,30 @@ main {
     margin-right: 15px;
 }
 
+.card:hover .album-img img{
+    filter: opacity(0.3);
+}
+
+.card:hover i{
+    display: initial;
+}
+
 .circ {
     border-radius: 50%;
 }
 
 .album-img {
     padding: 20px 0;
+    position: relative;
+}
+
+.album-img i {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-size: 2.5rem;
+    display: none;
 }
 
 .album-img img {
@@ -318,6 +345,11 @@ main {
     justify-content: center;
 }
 
+.song-info .info p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 .info .album-title,.album-subt {
     font-size: .8rem;
     margin: 0;
@@ -329,6 +361,10 @@ main {
     color: var(--text-grey-color);
     cursor: pointer;
 }
+
+.add-library i:hover {
+    color: white;
+}
 /* /Song-info */
 /* Song-command */
 .song-command {
@@ -338,8 +374,9 @@ main {
 }
 
 .song-btn {
-    justify-content: center;
-    letter-spacing: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -347,6 +384,10 @@ main {
 .song-command .play {
     font-size: 2rem;
     margin: 0 10px;
+}
+
+.song-command .play:hover {
+    transform: scale(1.1);
 }
 
 .song-duration {
@@ -360,6 +401,14 @@ main {
     height: 4px;
     border-radius: 4px;
     background-color: var(--text-grey-color);
+}
+
+.song-duration:hover .time {
+    background-color: greenyellow;
+}
+
+.song-duration:hover .timer .time-dot {
+    display: initial;
 }
 
 .max {
@@ -377,6 +426,16 @@ main {
     border-radius: 4px;
     background-color: lightgrey;
 }
+
+.time-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
 /* /Song-command */
 
 /* Song-mixer */
@@ -403,5 +462,23 @@ main {
     border-radius: 4px;
     background-color: lightgrey;
 }
+
+.vol-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.volume:hover .vol {
+    background-color: greenyellow;
+}
+
+.volume:hover .vol-dot {
+    display: initial;
+}
+
 /* /Song-mixer */
 /* /PLAYER */
