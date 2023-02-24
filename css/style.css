@@ -55,7 +55,7 @@ ul {
     width: 250px;
     height: 100%;
     position: relative;
-    color: lightgray;
+    color: var(--text-grey-color);
     /* debug */
     background-color: black;
 }
@@ -81,6 +81,10 @@ ul {
     padding: 0 10px;
 }
 
+.navigate li:not(.not):hover {
+    color: white;
+    cursor: pointer;
+}
 .navigate a {
     align-items: center;
 }
@@ -105,6 +109,7 @@ ul {
 
 .playlist h3 {
     margin: 10px 0;
+    color: white;
 }
 
 .add-playlist {
@@ -121,6 +126,7 @@ ul {
     width: 100%;
     position: absolute;
     bottom: 0;
+    color: white;
     left: 0;
     padding: 10px 0;
 }
@@ -152,7 +158,7 @@ ul {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid lightgrey;
+    background-color: gray;
 }
 
 .user h3 {
