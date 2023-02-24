@@ -31,6 +31,33 @@
     }
     /* /Album-section */
     /* /CONTENT */
+
+    /* PLAYER */
+    /* Song-info */
+    .song-info .img {
+        width: 100%;
+    }
+    .add-library {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        justify-content: center;
+    }
+    /* /Song-info */
+
+    /* Song-command */
+    .song-duration {
+        justify-content: center;
+    }
+    .timer {
+        width: 60%;
+    }
+    /* /Song-command */
+    /* Song-mixer */
+    .song-mixer {
+    }
+    /* /Song-mixer */
+    /* /PLAYER */
 }
 /* /RESPONSIVE SMALL-SCREEN */
 

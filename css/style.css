@@ -92,8 +92,8 @@ ul {
 
 .navigate h4 {
     margin-left: 10px;
-    font-size: .9rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
 }
 /* /Navigation btn */
 
@@ -128,7 +128,7 @@ ul {
 .download-app {
     width: calc(100% - 20px);
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid rgb(103, 97, 97);
 }
 
@@ -297,10 +297,12 @@ main {
 .song-info {
     width: 240px;
 }
+
 .img {
     width: 40px;
     margin-right: 10px;
 }
+
 .song-info img {
     max-width: 100%;
 }
@@ -319,26 +321,30 @@ main {
 .add-library i{
     margin-left: 10px;
     color: var(--text-grey-color);
+    cursor: pointer;
 }
 /* /Song-info */
 /* Song-command */
 .song-command {
-    width: 500px;
+    width: 30%;
+    min-width: 300px;
     font-size: 1.5rem;
 }
+
 .song-btn {
-    text-align: center;
+    justify-content: center;
     letter-spacing: 1rem;
     margin-bottom: 10px;
+    cursor: pointer;
 }
+
 .song-command .play {
-    font-size: 2.4rem;
-    transform: translate(0,10%);
-    margin: 0 20px;
+    font-size: 2rem;
+    margin: 0 10px;
 }
 
 .song-duration {
-    font-size: 1rem;
+    font-size: .8rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -348,6 +354,15 @@ main {
     height: 4px;
     border-radius: 4px;
     background-color: var(--text-grey-color);
+}
+
+.max {
+    width: 10%;
+    text-align: right;
+}
+
+.min {
+    width: 10%;
 }
 
 .time {
@@ -362,12 +377,11 @@ main {
 .song-mixer {
     width: 240px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .mixer-btn {
     text-align: center;
-    letter-spacing: .5rem;
 }
 
 .volume {
